@@ -4,3 +4,4 @@
 #### bhj-maven: Practice Using Maven
 #### bhj-di:
 #### bhj-di_annotation:
+#### bhj-springjdbc
