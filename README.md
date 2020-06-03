@@ -5,3 +5,4 @@
 #### bhj-dixml: Spring DI Practice Using XML
 #### bhj-di_annotation:Spring DI Practice Using Annotation
 #### bhj-spjdbc: Spring JDBC Practice
+#### bhj-di: Simple Project Using DI
