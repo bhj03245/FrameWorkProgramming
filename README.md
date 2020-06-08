@@ -6,4 +6,4 @@
 #### bhj-di_annotation:Spring DI Practice Using Annotation
 #### bhj-spjdbc: Spring JDBC Practice
 #### bhj-di: Simple Project Using DI
-#### bhj-mvc_simple: Practice Using 
+#### bhj-mvc_simple: Practice Using MVC
