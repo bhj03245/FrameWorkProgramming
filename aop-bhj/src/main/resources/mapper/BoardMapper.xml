@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+ 
+<mapper namespace="org.kpu.web.mapper.BoardMapper">
+  
+    <!-- 게시판 추가하기 -->
+    <insert id="insertBoard">
+        insert into tk_board (b_title,b_writer,b_detail,b_date,b_passwd) values(#{b_title},#{b_writer},#{b_detail},DEFAULT,#{b_passwd})
+    </insert>
+    
+    <!-- 트랜잭션 -->
+    <insert id="insertFailBoard">
+    	insert into tk_board (b_title,b_writer,b_detail,b_date,b_passwd) values(#{b_title},#{b_writer},#{b_detail})
+    </insert>
+    
+	 <!-- 페이징 -->
+ 	 <select id="listPage" resultType="BoardVO">
+	 	select * FROM tk_board;
+ 	 </select>
+    
+    <!-- 게시판 상세보기 -->
+    <select id="detailBoard" resultType="BoardVO">
+            select * from tk_board where b_no = #{b_no}
+    </select>
+ 
+    <!-- 게시판 삭제하기 -->
+    <delete id="deleteBoard" parameterType="int">
+        delete from tk_board where b_no = #{b_no}
+    </delete>
+    
+    <!-- 게시판 수정하기 -->
+    <update id="updateBoard">
+        update tk_board set b_title=#{b_title} , b_detail = #{b_detail} where b_no = #{b_no}
+    </update>
+	
+	
+</mapper>
