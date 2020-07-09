@@ -7,6 +7,6 @@
 #### bhj-spjdbc: Spring JDBC Practice
 #### bhj-di: Simple Project Using DI
 #### bhj-mvc_simple: Practice Using MVC
-#### aop-bhj: Project Using MyBatis, AOP, TRANSACTION
+#### aop-bhj: Making Board Project Using MyBatis, AOP, TRANSACTION
 #### bhj-mybatis: Practice Using MyBatis
 
